@@ -6,6 +6,11 @@ return array(
 
     'URL_ROUTER_ON' => true, // 开启URL路由
     'URL_ROUTE_RULES' => array(
+        array('admin/:id','admin/read', 'status=1', array('ext'=>'json','method'=>'get')),
+        array('admin/:id','admin/update', '', array('ext'=>'json','method'=>'put')),
+        array('admin/:id','admin/delete', '', array('ext'=>'json','method'=>'delete')),
+
+
         array('order/:id','order/read',array('ext'=>'json','method'=>'get')),
     ),
 
