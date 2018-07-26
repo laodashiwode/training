@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<include file="Common:main"/>
+
+<body>
+
+<!-- Header ends -->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+    <!-- Sidebar -->
+    <include file="Common:sidebar"/>
+
+    <!-- Sidebar ends -->
+
+    <!-- Main bar -->
+    <div class="mainbar">
+
+        <!-- Page heading -->
+        <div class="page-head">
+            <h2 class="pull-left"><i class="icon-table"></i> 商品列表</h2>
+
+            <!-- Breadcrumb -->
+            <div class="bread-crumb pull-right">
+                <a href="index.html"><i class="icon-home"></i> Home</a>
+                <!-- Divider -->
+                <span class="divider">/</span>
+                <a href="#" class="bread-current">Dashboard</a>
+            </div>
+
+            <div class="clearfix"></div>
+
+        </div>
+        <!-- Page heading ends -->
+
+        <!-- Matter -->
+
+        <div class="matter">
+            <div class="container">
+
+                <!-- Table -->
+
+                <div class="row">
+
+                    <div class="col-md-12">
+
+                        <div class="widget">
+
+                            <!--<div class="widget-head">-->
+                                <!--<div class="pull-left"><a href="__URL__/add"><button type="button" class="btn btn-danger">添加管理员</button></a></div>-->
+                                <!--<div class="widget-icons pull-right">-->
+                                    <!--<a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>-->
+                                    <!--<a href="#" class="wclose"><i class="icon-remove"></i></a>-->
+                                <!--</div>-->
+                                <!--<div class="clearfix"></div>-->
+                            <!--</div>-->
+
+                            <div class="widget-content">
+
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>用戶名</th>
+                                        <th>对外称呼</th>
+                                        <th>对内称呼</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                    <volist name="list" id="vo">
+                                        <tr>
+                                            <td>{$vo.id}
+                                            <td>{$vo.user_name}</td>
+                                            <td>{$vo.nickname}</td>
+                                            <td>{$vo.nickout}</td>
+                                            <td>
+                                                <!--<button class="btn btn-xs btn-success"><i class="icon-ok"></i></button>-->
+                                                <a href="__URL__/edit/id/{$vo.id}"><button class="btn btn-xs btn-warning"><i class="icon-pencil"></i></button></a>
+                                                <a href="" class="del" data-id="{$vo.id}" onClick=""><button class="btn btn-xs btn-danger"><i class="icon-remove"></i></button></a>
+                                                </button>
+
+                                            </td>
+                                        </tr>
+                                    </volist>
+
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <div class="widget-foot">
+                                    <ul class="pagination pull-right">
+                                        {$page}
+                                    </ul>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Matter ends -->
+
+</div>
+
+<!-- Mainbar ends -->
+<div class="clearfix"></div>
+
+<!--</div>-->
+<!-- Content ends -->
+
+<include file="Common:footer"/>
+
+
+</body>
+<script>
+    $('.del').click(function () {
+        if (confirm("确定要删除吗？")) {
+            var admin_id = $(this).attr('data-id');
+            $.ajax({
+                type: "GET",
+                url: "__URL__/del/id/"+admin_id,
+                processData: false,
+                contentType: false,
+                cache: false,
+//                data: formData
+            }).done(function (response) {
+                //...
+                alert('刪除成功！！');
+                location.reload();
+            }).fail(function (data) {
+                //...
+                alert('刪除失败！');
+            });
+        }
+    });
+</script>
+</html>

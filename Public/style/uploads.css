@@ -1,0 +1,79 @@
+#table-option tr td, #table-option tr td {
+    vertical-align: middle;
+}
+.content .uploadAll .img-box i{
+    position: absolute;
+    right: .02rem;
+    display: block;
+    top: .09rem;
+    height: .1rem;
+}
+/*图片上传*/
+
+.content .uploadAll {
+    display: flex;
+    min-height: 1rem;
+    flex-wrap: wrap;
+}
+.uploadAll .img-box{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.uploadAll .img-box .imgbox{
+    width: 9.9rem;
+    height: 9.9rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.uploadAll .img-box .imgbox img{
+    height: 100%;
+    width: auto;
+}
+.uploadAll .img-box .imgbox span{
+    font-size: .16rem;
+    position: absolute;
+    right: .05rem;
+    top: .05rem;
+    color: #333;
+}
+.content .uploadAll .img-box .img-div{
+    position: relative;
+    width: 9.9rem;
+    height: 9.9rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.content .uploadAll .img-box i{
+    position: absolute;
+    right: 2rem;
+    display: block;
+    top: 0.1rem;
+    height: 1rem;
+}
+.content .uploadAll .img-box i img{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+}
+.content .uploadAll .img-box img{
+    width: auto;
+    height: 9rem;
+}
+.content .upload {
+    height: 9.9rem;
+    width: 9.9rem;
+    display: inline-block;
+    border: 1px dashed #ddd;
+    background: url(./images/add.png) no-repeat center;
+    background-size: 5rem 5rem;
+}
+.content .upload input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
