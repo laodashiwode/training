@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'DEFAULT_MODULE'=>'Admin',
+	'DEFAULT_MODULE'=>'Api',
 //    'URL_MODEL' => 2,
 
     'URL_ROUTER_ON' => true, // 开启URL路由
