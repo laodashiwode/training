@@ -19,9 +19,9 @@ class AdminController extends RestController
         switch ($this->_method){
             case 'get':
                 $list = $this->admin->getinfo($data['id']);
-                if(!$list){
+                if (!$list) {
                     returnjson('404', '暂无相关数据', '');
-                }else{
+                } else {
                     returnjson('200', 'success', $list);
                 }
                 break;
@@ -45,9 +45,9 @@ class AdminController extends RestController
                 }
                 $data = json_decode($data,true);
                 $res  = $this->admin->editinfo($data);
-                if(!$res){
+                if (!$res) {
                     returnjson('400', '操作失败', '');
-                }else{
+                } else {
                     returnjson('200', '操作成功', '');
                 }
                 break;
@@ -62,9 +62,9 @@ class AdminController extends RestController
         switch ($this->_method){
             case 'get':
                 $res  = $this->admin->delinfo($data['id']);
-                if(!$res){
+                if (!$res) {
                     returnjson('400', '操作失败', '');
-                }else{
+                } else {
                     returnjson('200', '操作成功', '');
                 }
                 break;

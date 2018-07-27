@@ -13,9 +13,9 @@ class OrderController extends RestController
         switch ($this->_method){
             case 'get':
                 $list = D('WorkerOrder')->getlist();
-                if(!$list){
+                if (!$list) {
                     returnjson('404', '暂无相关数据', '');
-                }else{
+                } else {
                     foreach ( $list as $key =>$val){
                         $list[$key]['operation_list'] = D('WorkerOrderOperationRecord')
                             ->getoperation($val['id']);
