@@ -10,13 +10,13 @@ class OrderController extends RestController
 
     public function read()
     {
-        switch ($this->_method){
+        switch ($this->_method) {
             case 'get':
                 $list = D('WorkerOrder')->getlist();
                 if (!$list) {
                     returnjson('404', '暂无相关数据', '');
                 } else {
-                    foreach ( $list as $key =>$val){
+                    foreach ( $list as $key =>$val) {
                         $list[$key]['operation_list'] = D('WorkerOrderOperationRecord')
                             ->getoperation($val['id']);
                     }

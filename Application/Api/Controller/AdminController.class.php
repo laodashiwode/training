@@ -16,7 +16,7 @@ class AdminController extends RestController
     public function read()
     {
         $data = I();
-        switch ($this->_method){
+        switch ($this->_method) {
             case 'get':
                 $list = $this->admin->getinfo($data['id']);
                 if (!$list) {
@@ -36,7 +36,7 @@ class AdminController extends RestController
     public function update()
     {
         $data = I('put.');
-        switch ($this->_method){
+        switch ($this->_method) {
             case 'get':
                 break;
             case 'put':
@@ -59,7 +59,7 @@ class AdminController extends RestController
     public function delete()
     {
         $data = I();
-        switch ($this->_method){
+        switch ($this->_method) {
             case 'get':
                 $res  = $this->admin->delinfo($data['id']);
                 if (!$res) {
