@@ -6,11 +6,11 @@ use Think\Model;
 
 class WorkerOrderOperationRecordModel extends Model
 {
-    public function getoperation($id)
+    public function getoperation($list)
     {
-        return $this->where("worker_order_id = $id")
+        $where['worker_order_id'] = array('in', $list);
+        return $this->where($where)
             ->order('create_time desc')
-            ->limit(5)
             ->select();
     }
 }
