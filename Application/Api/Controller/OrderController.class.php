@@ -1,4 +1,5 @@
 <?php
+
 namespace Api\Controller;
 
 use Think\Controller\RestController;
@@ -10,23 +11,15 @@ class OrderController extends RestController
 
     public function read()
     {
-        switch ($this->_method) {
-            case 'get':
-                $list = D('WorkerOrder')->getlist();
-                if (!$list) {
-                    returnjson('404', '暂无相关数据', '');
-                } else {
-                    foreach ( $list as $key =>$val) {
-                        $list[$key]['operation_list'] = D('WorkerOrderOperationRecord')
-                            ->getoperation($val['id']);
-                    }
-                    returnjson('200', 'success', $list);
-                }
-                break;
-            case 'put':
-                break;
-            case 'post':
-                break;
+        $list = D('WorkerOrder')->getlist();
+        if (!$list) {
+            returnjson('404', '暂无相关数据', '');
+        } else {
+            foreach ( $list as $key =>$val) {
+                $list[$key]['operation_list'] = D('WorkerOrderOperationRecord')
+                    ->getoperation($val['id']);
+            }
+            returnjson('200', 'success', $list);
         }
     }
 }

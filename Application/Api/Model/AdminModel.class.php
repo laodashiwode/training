@@ -1,4 +1,5 @@
 <?php
+
 namespace Api\Model;
 
 use Think\Model;
@@ -13,7 +14,7 @@ class AdminModel extends Model
         $list       = $this->field('id, user_name, nickname, nickout')
             ->limit($Page->firstRow.','.$Page->listRows)
             ->select();
-        return  ['list'=>$list, 'page'=>$show];
+        return  $list;
     }
 
     public function getinfo($id)

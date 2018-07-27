@@ -6,11 +6,13 @@ return array(
 
     'URL_ROUTER_ON' => true, // 开启URL路由
     'URL_ROUTE_RULES' => array(
-        array('admins/:id', 'Admin/read', 'status = 1', array('ext' => '', 'method' => 'get')),
-        array('admins/:id', 'Admin/update', '', array('ext' => '', 'method' => 'put')),
-        array('admins/:id', 'Admin/delete', '', array('ext' => '', 'method' => 'delete')),
+        array('admins$', 'Admin/getlist', '', array('ext' => '', 'method' => 'get')),
+        array('admins$', 'Admin/add', '', array('ext' => '', 'method' => 'post')),
+        array('admins/:id\d$', 'Admin/read', '', array('ext' => '', 'method' => 'get')),
+        array('admins/:id\d$', 'Admin/update', '', array('ext' => '', 'method' => 'put')),
+        array('admins/:id\d$', 'Admin/delete', '', array('ext' => '', 'method' => 'delete')),
 
-        array('orders', 'Order/read', array('ext' => '', 'method' => 'get')),
+        array('orders$', 'Order/read', array('ext' => '', 'method' => 'get')),
 
     ),
 
