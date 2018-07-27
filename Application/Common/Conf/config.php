@@ -11,7 +11,6 @@ return array(
         array('admins/:id', 'Admin/delete', '', array('ext'=>'', 'method'=>'delete')),
 
         array('orders', 'Order/read', array('ext'=>'', 'method'=>'get')),
-        array('orders/:id', 'Order/read1', array('ext'=>'', 'method'=>'get')),
 
     ),
 
