@@ -1,16 +1,16 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'DEFAULT_MODULE'=>'Api',
+	'DEFAULT_MODULE' => 'Api',
 //    'URL_MODEL' => 2,
 
     'URL_ROUTER_ON' => true, // 开启URL路由
     'URL_ROUTE_RULES' => array(
-        array('admins/:id', 'Admin/read', 'status=1', array('ext'=>'', 'method'=>'get')),
-        array('admins/:id', 'Admin/update', '', array('ext'=>'', 'method'=>'put')),
-        array('admins/:id', 'Admin/delete', '', array('ext'=>'', 'method'=>'delete')),
+        array('admins/:id', 'Admin/read', 'status = 1', array('ext' => '', 'method' => 'get')),
+        array('admins/:id', 'Admin/update', '', array('ext' => '', 'method' => 'put')),
+        array('admins/:id', 'Admin/delete', '', array('ext' => '', 'method' => 'delete')),
 
-        array('orders', 'Order/read', array('ext'=>'', 'method'=>'get')),
+        array('orders', 'Order/read', array('ext' => '', 'method' => 'get')),
 
     ),
 
