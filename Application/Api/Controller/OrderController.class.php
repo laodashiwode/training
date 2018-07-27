@@ -12,13 +12,14 @@ class OrderController extends RestController
     {
         switch ($this->_method){
             case 'get':
-                $id = I('id');
-                $list = D('WorkerOrder')->getlist($id);
+                $list = D('WorkerOrder')->getlist();
                 if(!$list){
                     returnjson('404', '暂无相关数据', '');
                 }else{
-                    $list['operation'] = D('WorkerOrderOperationRecord')
-                        ->getoperation($id);
+                    foreach ( $list as $key =>$val){
+                        $list[$key]['operation_list'] = D('WorkerOrderOperationRecord')
+                            ->getoperation($val['id']);
+                    }
                     returnjson('200', 'success', $list);
                 }
                 break;
@@ -27,7 +28,5 @@ class OrderController extends RestController
             case 'post':
                 break;
         }
-
     }
-
 }

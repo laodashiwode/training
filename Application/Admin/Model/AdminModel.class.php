@@ -30,7 +30,7 @@ class AdminModel extends Model
 
     public function editinfo($data)
     {
-       return $this->where('id  ='. $data['id'])
+        return $this->where('id  ='. $data['id'])
            ->save(['nickname' => $data['nickname'], 'nickout' => $data['nickout']]);
     }
 
