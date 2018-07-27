@@ -272,20 +272,28 @@
     $('.del').click(function () {
         if (confirm("确定要删除吗？")) {
             var admin_id = $(this).attr('data-id');
+            var data = {
+                "id":47,
+                "nickname":"333",
+                "nickout":"123",
+            };
             $.ajax({
-                type: "GET",
-                url: "/index.php/Admin/Admin/del/id/"+admin_id,
+                type: "PUT",
+//                url: "/index.php/Admin/Admin/del/id/"+admin_id,
+                url: "http://localhost/index.php/Api/admin/47.json",
                 processData: false,
                 contentType: false,
                 cache: false,
-//                data: formData
+                data: data
             }).done(function (response) {
                 //...
-                alert('刪除成功！！');
-                location.reload();
+                    console.log(response);
+//                alert('刪除成功！！');
+//                location.reload();
             }).fail(function (data) {
                 //...
-                alert('刪除失败！');
+                console.log(data);
+//                alert('刪除失败！');
             });
         }
     });
