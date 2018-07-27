@@ -13,4 +13,3 @@ class WorkerOrderOperationRecordModel extends Model
             ->select();
     }
 }
-?>

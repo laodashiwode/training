@@ -828,3 +828,91 @@ NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.p
 NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
 SQL: SELECT `id`,`nickname`,`nickout` FROM `admin` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2018-07-27T11:38:36+08:00 ] 127.0.0.1 /index.php/Api/admins/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0090s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 18 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT `id`,`nickname`,`nickout` FROM `admin` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-27T11:44:07+08:00 ] 127.0.0.1 /index.php/Api/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `worker_order` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `worker_order` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `worker_order_operation_record` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `worker_order_operation_record` WHERE ( worker_order_id = 1 ) ORDER BY create_time desc LIMIT 5   [ RunTime:0.0004s ]
+
+[ 2018-07-27T11:48:21+08:00 ] 127.0.0.1 /index.php/Api/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000521s ]
+SQL: SHOW COLUMNS FROM `worker_order` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `worker_order` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `worker_order_operation_record` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `worker_order_operation_record` WHERE ( worker_order_id = 1 ) ORDER BY create_time desc LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2018-07-27T11:48:29+08:00 ] 127.0.0.1 /index.php/Api/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `worker_order` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `worker_order` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `worker_order_operation_record` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `worker_order_operation_record` WHERE ( worker_order_id = 1 ) ORDER BY create_time desc LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2018-07-27T11:48:39+08:00 ] 127.0.0.1 /index.php/Api/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `worker_order` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `worker_order` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `worker_order_operation_record` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `worker_order_operation_record` WHERE ( worker_order_id = 1 ) ORDER BY create_time desc LIMIT 5   [ RunTime:0.0003s ]
+
+[ 2018-07-27T12:02:31+08:00 ] 127.0.0.1 /index.php/Api/admins/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0103s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 18 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT `id`,`nickname`,`nickout` FROM `admin` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-27T12:03:02+08:00 ] 127.0.0.1 /index.php/Api/orders/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `worker_order` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `worker_order` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `worker_order_operation_record` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `worker_order_operation_record` WHERE ( worker_order_id = 1 ) ORDER BY create_time desc LIMIT 5   [ RunTime:0.0006s ]
+

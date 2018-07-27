@@ -39,4 +39,3 @@ class AdminModel extends Model
         return $this->where("id = $id" )->delete();
     }
 }
-?>
