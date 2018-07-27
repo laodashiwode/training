@@ -29,16 +29,6 @@ class AdminController extends RestController
                 }
                 break;
             case 'put':
-                foreach ($data as $key => $val){
-                    $data = $key;
-                }
-                $data = json_decode($data,true);
-                $res  = $this->admin->editinfo($data);
-                if(!$res){
-                    returnjson('400','操作失败','');
-                }else{
-                    returnjson('200','操作成功','');
-                }
                 break;
             case 'post':
                 dump('post');
@@ -54,6 +44,17 @@ class AdminController extends RestController
             case 'get':
                 break;
             case 'put':
+
+                foreach ($data as $key => $val){
+                    $data = $key;
+                }
+                $data = json_decode($data,true);
+                $res  = $this->admin->editinfo($data);
+                if(!$res){
+                    returnjson('400','操作失败','');
+                }else{
+                    returnjson('200','操作成功','');
+                }
                 break;
             case 'post':
                 break;

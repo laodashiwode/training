@@ -244,3 +244,147 @@ NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.p
 NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
 SQL: SELECT `id`,`nickname`,`nickout` FROM `admin` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2018-07-27T09:14:05+08:00 ] 127.0.0.1 /index.php/Api/admin//1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0092s ]
+ERR: 非法操作:1
+
+[ 2018-07-27T09:14:10+08:00 ] 127.0.0.1 /index.php/Api/admin/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0104s ]
+ERR: 非法操作:1
+
+[ 2018-07-27T09:14:47+08:00 ] 127.0.0.1 /index.php/Api/admin/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0103s ]
+ERR: 非法操作:1
+
+[ 2018-07-27T09:15:10+08:00 ] 127.0.0.1 /index.php/Api/admin/1.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0098s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 20 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: SELECT `id`,`nickname`,`nickout` FROM `admin` WHERE ( id = 1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-07-27T09:15:36+08:00 ] 127.0.0.1 /index.php/Api/admin/49.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000529s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0098s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 66 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: DELETE FROM `admin` WHERE ( id =49 ) [ RunTime:0.0684s ]
+
+[ 2018-07-27T09:16:01+08:00 ] 127.0.0.1 /index.php/Api/admin/48.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0076s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 52 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2018-07-27T09:16:22+08:00 ] 127.0.0.1 /index.php/Api/admin/48.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0098s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 42 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `admin` SET `nickname`='123',`nickout`='21' WHERE ( id  =49 ) [ RunTime:0.0003s ]
+
+[ 2018-07-27T09:16:34+08:00 ] 127.0.0.1 /index.php/Api/admin/47.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0094s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 42 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `admin` SET `nickname`='123',`nickout`='21' WHERE ( id  =49 ) [ RunTime:0.0003s ]
+
+[ 2018-07-27T09:16:47+08:00 ] 127.0.0.1 /index.php/Api/admin/47.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0099s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 42 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `admin` SET `nickname`='123',`nickout`='21' WHERE ( id  =49 ) [ RunTime:0.0003s ]
+
+[ 2018-07-27T09:17:04+08:00 ] 127.0.0.1 /index.php/Api/admin/47.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0112s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 42 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `admin` SET `nickname`='123',`nickout`='21' WHERE ( id  =49 ) [ RunTime:0.0003s ]
+
+[ 2018-07-27T09:17:15+08:00 ] 127.0.0.1 /index.php/Api/admin/47.json
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0533s ]
+NOTIC: [2] Missing argument 1 for I(), called in E:\Code\training\Application\Api\Controller\AdminController.class.php on line 42 and defined E:\Code\training\ThinkPHP\Common\functions.php 第 271 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 273 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 278 行.
+NOTIC: [8] Undefined variable: name E:\Code\training\ThinkPHP\Common\functions.php 第 339 行.
+SQL: UPDATE `admin` SET `nickname`='123',`nickout`='21' WHERE ( id  =47 ) [ RunTime:0.0969s ]
+
