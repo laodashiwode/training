@@ -11,7 +11,7 @@ class AdminModel extends Model
         $Page       = new \Think\Page($count, 10);
         $show       = $Page->show();
         $list       = $this->field('id, user_name, nickname, nickout')
-            ->limit($Page->firstRow.', '.$Page->listRows)
+            ->limit($Page->firstRow.','.$Page->listRows)
             ->select();
         return  ['list'=>$list, 'page'=>$show];
     }
