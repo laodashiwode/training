@@ -18,21 +18,27 @@ class AdminController extends RestController
     public function read()
     {
         $data = I();
-        json_encode(['id'=>1,'nickname'=>'123','nikcout'=>'321']);
-
         switch ($this->_method){
             case 'get':
                 $list = $this->admin->getinfo($data['id']);
                 if(!$list){
                     returnjson('404','暂无相关数据','');
                 }else{
-//                    returnjson('200','success',$list);
-                    $this->response($list,'json');
+                    returnjson('200','success',$list);
+//                    $this->response($list,'json');
                 }
-                // 输出id为1的Info的json数据
                 break;
             case 'put':
-                dump( 'put');
+                foreach ($data as $key => $val){
+                    $data = $key;
+                }
+                $data = json_decode($data,true);
+                $res  = $this->admin->editinfo($data);
+                if(!$res){
+                    returnjson('400','操作失败','');
+                }else{
+                    returnjson('200','操作成功','');
+                }
                 break;
             case 'post':
                 dump('post');
@@ -48,16 +54,6 @@ class AdminController extends RestController
             case 'get':
                 break;
             case 'put':
-                foreach ($data as $key => $val){
-                    $data = $key;
-                }
-                $data = json_decode($data,true);
-                $res  = $this->admin->editinfo($data);
-                if(!$res){
-                    returnjson('400','操作失败','');
-                }else{
-                    returnjson('200','操作成功','');
-                }
                 break;
             case 'post':
                 break;
