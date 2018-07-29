@@ -18,7 +18,7 @@ function returnjson($code, $msg="", $data=array())
  * @param string $field    字段名
  * @return array
  */
-function reset_array_index(array $arr, $field='id')
+function reset_array_index(array $arr, $field='id', $start = '0', $end = '5')
 {
     $tmp = [];
     foreach ($arr as $val) {
@@ -26,6 +26,9 @@ function reset_array_index(array $arr, $field='id')
             continue;
         }
         $tmp[$val[$field]][] = $val;
+    }
+    foreach ($tmp as $key => $val){
+        $tmp[$key] =  array_slice($val, $start, $end);
     }
     return $tmp;
 }
