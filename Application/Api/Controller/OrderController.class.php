@@ -19,7 +19,7 @@ class OrderController extends RestController
             $order_id_list = array_column($list, 'id');
             $res = D('WorkerOrderOperationRecord')->getoperation($order_id_list);
             $res = reset_array_index($res, 'worker_order_id');
-            foreach ($list as $key => $val){
+            foreach ($list as $key => $val) {
                 $list[$key]['operation'] = $res[$val['id']];
             }
             returnjson('200', 'success', $list);

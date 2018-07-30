@@ -29,8 +29,3 @@ function reset_array_index(array $arr, $field='id')
     }
     return $tmp;
 }
-function GetRunTime()
-{
-    list($usec,$sec)=explode(" ",microtime());
-    return ((float)$usec+(float)$sec);
-}
