@@ -27,7 +27,7 @@ function reset_array_index(array $arr, $field='id', $start = '0', $end = '5')
         }
         $tmp[$val[$field]][] = $val;
     }
-    foreach ($tmp as $key => $val){
+    foreach ($tmp as $key => $val) {
         $tmp[$key] =  array_slice($val, $start, $end);
     }
     return $tmp;
