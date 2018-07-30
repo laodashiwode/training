@@ -15,7 +15,7 @@ class OrderController extends RestController
         if (!$list) {
             returnjson('404', '暂无相关数据', '');
         } else {
-            $order_id_list = array_column($list , 'id');
+            $order_id_list = array_column($list, 'id');
             $res = D('WorkerOrderOperationRecord')->getoperation($order_id_list);
 
             $res = reset_array_index($res, 'worker_order_id');
